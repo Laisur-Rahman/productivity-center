@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="Professional laptop logo">
+  <circle cx="256" cy="256" r="250" fill="#167d78"/>
+
+  <!-- Laptop screen -->
+  <rect x="132" y="132" width="248" height="174" rx="18"
+        fill="none" stroke="#ffffff" stroke-width="18"/>
+  <path d="M153 275h206" fill="none" stroke="#ffffff"
+        stroke-width="10" stroke-linecap="round" opacity=".55"/>
+
+  <!-- Laptop base -->
+  <path d="M100 332h312l28 36c4 6 0 14-8 14H80c-8 0-12-8-8-14l28-36Z"
+        fill="#ffffff"/>
+  <path d="M230 348h52" fill="none" stroke="#167d78"
+        stroke-width="8" stroke-linecap="round"/>
+</svg>
