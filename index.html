@@ -2,80 +2,82 @@
 <html lang="en">
 
 <head>
-  <!-- ============================================================
-       Productivity Center — Landing Page
-       Single-file build: HTML + CSS + minimal JS. Just upload.
-       ============================================================ -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- ===== SEO Core ===== -->
-  <title>Productivity Center — Pomodoro Timer, To-Do List &amp; Site Blocker Extension</title>
+  <title>Productivity Center — Pomodoro Timer, Website and Keyword Blocker, To-Do List &amp; Time Tracker Extension</title>
   <meta name="description"
     content="All-in-one productivity extension: Pomodoro timer, to-do list, website &amp; keyword blocker and productivity analytics — stay focused in one convenient interface." />
   <meta name="robots" content="index, follow, max-image-preview:large" />
   <meta name="theme-color" content="#167d78" />
-  <link rel="canonical" href="https://www.Laisur-Rahman.github.io/productivity-center/" />
+  <link rel="canonical" href="https://laisur-rahman.github.io/productivity-center/" />
 
-  <!-- ===== Open Graph (Facebook, LinkedIn, etc.) ===== -->
+  <!-- ===== Open Graph ===== -->
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Productivity Center" />
   <meta property="og:title" content="Productivity Center — All-in-One Productivity Extension" />
   <meta property="og:description"
     content="Pomodoro timer, to-do list, website &amp; keyword blocker and analytics — in one clean, simple interface." />
-  <meta property="og:url" content="https://www.Laisur-Rahman.github.io/productivity-center/" />
-  <meta property="og:image" content="https://www.Laisur-Rahman.github.io/productivity-center/og-cover.png" />
+  <meta property="og:url" content="https://laisur-rahman.github.io/productivity-center/" />
+  <meta property="og:image" content="https://laisur-rahman.github.io/productivity-center/images/ProductivityCenter.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Productivity Center — focus timer, site blocker and analytics" />
 
   <!-- ===== Twitter Card ===== -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Productivity Center — All-in-One Productivity Extension" />
   <meta name="twitter:description"
     content="Stay focused with a Pomodoro timer, to-do list, distraction blocker and analytics — all in one extension." />
-  <meta name="twitter:image" content="https://www.Laisur-Rahman.github.io/productivity-center/images/logo.svg" />
+  <meta name="twitter:image" content="https://laisur-rahman.github.io/productivity-center/images/ProductivityCenter.png" />
 
-  <!-- ===== Structured Data (rich results in Google) ===== -->
+  <!-- ===== Structured Data ===== -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
     "name": "Productivity Center",
     "applicationCategory": "BrowserApplication",
-    "operatingSystem": "Chrome, Edge, Firefox",
+    "operatingSystem": "Chrome, Edge",
+    "softwareVersion": "2.3.7",
+    "dateModified": "2026-11-20",
     "description": "All-in-one productivity extension combining a Pomodoro timer, to-do list, website & keyword blocker, and productivity analytics.",
-    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
-    
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
   }
   </script>
 
   <!-- ===== Favicon ===== -->
   <link rel="icon" href="images/logo.png" type="image/png" />
+  <link rel="apple-touch-icon" href="images/logo.png" />
 
   <!-- ===== Stylesheet ===== -->
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
   <!-- ================= HEADER ================= -->
   <header class="site-header">
     <div class="wrap nav">
-      <a class="brand" href="#" aria-label="Productivity Center home">
+      <a class="brand" href="index.html" aria-label="Productivity Center home">
         <img src="images/logo.svg" alt="" width="34" height="34" class="brand-mark-img" />
         <h1>Productivity Center</h1>
       </a>
       <nav aria-label="Main navigation">
         <ul class="nav-links">
-          <li><a href="#features">Features</a></li>
-          <li><a href="#how-it-works">How it works</a></li>
-          <li><a href="#faq">FAQ</a></li>
+          <li class="nav-hide-mobile"><a href="#features">Features</a></li>
+          <li class="nav-hide-mobile"><a href="#how-it-works">How it works</a></li>
+          <li class="nav-hide-mobile"><a href="#faq">FAQ</a></li>
           <li><a href="PrivacyPolicy.html">Privacy Policy</a></li>
-          <li><a href="#download" class="btn btn-primary" style="padding:10px 20px;font-size:14px">Download</a></li>
+          <li><a href="#download" class="btn btn-primary nav-cta">Add to Chrome</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <main>
+  <main id="main">
     <!-- ================= HERO ================= -->
     <section class="hero">
       <div class="wrap">
@@ -87,7 +89,7 @@
           analytics in one convenient interface.
         </p>
         <div class="actions">
-          <a href="#download" class="btn btn-primary">Add to Browser — Free</a>
+          <a href="#download" class="btn btn-primary">Add to Chrome — Free</a>
           <a href="#features" class="btn btn-ghost">Explore features</a>
         </div>
       </div>
@@ -170,7 +172,7 @@
           </details>
           <details>
             <summary>Does it collect my browsing data?</summary>
-            <div>No. Blocking rules and your analytics run locally in your browser. We don’t sell or share your personal data.</div>
+            <div>No. Blocking rules and your analytics run locally in your browser. No data is sent to any server, sold, or shared with third parties.</div>
           </details>
           <details>
             <summary>Can I customize the Pomodoro durations?</summary>
@@ -186,7 +188,7 @@
         <h2 id="dl-heading" class="section-title">Ready to take back your focus?</h2>
         <p>Start your day with Productivity Center. With one click, your focus tools are ready.</p>
         <a class="btn" href="https://chromewebstore.google.com/detail/pnpfoeodcafmongmmaphepmmbnjlbkfl" rel="noopener"
-          target="_blank">Add Productivity Center — It’s Free</a>
+          target="_blank">Add Productivity Center — It's Free</a>
       </div>
     </section>
   </main>
@@ -199,20 +201,18 @@
         <a href="PrivacyPolicy.html">Privacy Policy</a>
         <a href="https://microsoftedge.microsoft.com/addons/detail/productivity-center/cjjpeiifnaimdphhkklijcakngbgcnpa" target="_blank" rel="noopener">Edge Add-ons</a>
         <a href="https://chromewebstore.google.com/detail/pnpfoeodcafmongmmaphepmmbnjlbkfl" target="_blank" rel="noopener">Chrome Web Store</a>
-        <a href="#" aria-current="page">Contact</a>
+        <!-- TODO: replace mailto with your real contact email -->
+        <a href="mailto:LaisurRahman@proton.me">Contact</a>
       </nav>
     </div>
   </footer>
 
-  <!-- Minimal, defensive JS — the page is fully functional without it -->
   <script>
     (function () {
       "use strict";
-      // Auto-update copyright year
       var y = document.getElementById("year");
       if (y) { y.textContent = String(new Date().getFullYear()); }
 
-      // Scroll-reveal (progressive enhancement)
       if (!("IntersectionObserver" in window) ||
         window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
         document.querySelectorAll(".reveal").forEach(function (el) {

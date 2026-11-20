@@ -2,10 +2,6 @@
 <html lang="en">
 
 <head>
-  <!-- ============================================================
-       Productivity Center — Privacy Policy
-       Same design system as the landing page (single-file build).
-       ============================================================ -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -15,36 +11,40 @@
     content="How Productivity Center handles your data: everything is processed and stored locally in your browser. No tracking, no analytics, no third-party sharing." />
   <meta name="robots" content="index, follow" />
   <meta name="theme-color" content="#167d78" />
-  <link rel="canonical" href="https://www.Laisur-Rahman.github.io/productivity-center/PrivacyPolicy.html" />
+  <link rel="canonical" href="https://laisur-rahman.github.io/productivity-center/PrivacyPolicy.html" />
 
-  <!-- ===== Open Graph (Facebook, LinkedIn, etc.) ===== -->
+  <!-- ===== Open Graph ===== -->
   <meta property="og:type" content="article" />
   <meta property="og:site_name" content="Productivity Center" />
   <meta property="og:title" content="Privacy Policy — Productivity Center" />
   <meta property="og:description" content="Local-first by design: your data never leaves your browser." />
-  <meta property="og:url" content="https://www.Laisur-Rahman.github.io/productivity-center/PrivacyPolicy.html" />
-  <meta property="og:image" content="https://www.Laisur-Rahman.github.io/productivity-center/og-cover.png" />
+  <meta property="og:url" content="https://laisur-rahman.github.io/productivity-center/PrivacyPolicy.html" />
+  <meta property="og:image" content="https://laisur-rahman.github.io/productivity-center/images/ProductivityCenter.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Productivity Center — Privacy Policy" />
 
   <!-- ===== Twitter Card ===== -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Privacy Policy — Productivity Center" />
   <meta name="twitter:description" content="Local-first by design: your data never leaves your browser." />
-  <meta name="twitter:image" content="https://www.Laisur-Rahman.github.io/productivity-center/og-cover.png" />
+  <meta name="twitter:image" content="https://laisur-rahman.github.io/productivity-center/images/ProductivityCenter.png" />
 
-  <!-- ===== Structured Data: page + breadcrumb (rich result hierarchy) ===== -->
+  <!-- ===== Structured Data ===== -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "WebPage",
     "name": "Privacy Policy",
     "description": "How Productivity Center handles your data: everything is processed and stored locally in your browser.",
-    "url": "https://www.Laisur-Rahman.github.io/productivity-center/PrivacyPolicy.html",
-    "isPartOf": { "@type": "WebSite", "name": "Productivity Center", "url": "https://www.Laisur-Rahman.github.io/productivity-center/" },
+    "url": "https://laisur-rahman.github.io/productivity-center/PrivacyPolicy.html",
+    "dateModified": "2026-11-20",
+    "isPartOf": { "@type": "WebSite", "name": "Productivity Center", "url": "https://laisur-rahman.github.io/productivity-center/" },
     "breadcrumb": {
       "@type": "BreadcrumbList",
       "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.Laisur-Rahman.github.io/productivity-center/" },
-        { "@type": "ListItem", "position": 2, "name": "Privacy Policy", "item": "https://www.Laisur-Rahman.github.io/productivity-center/PrivacyPolicy.html" }
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://laisur-rahman.github.io/productivity-center/" },
+        { "@type": "ListItem", "position": 2, "name": "Privacy Policy", "item": "https://laisur-rahman.github.io/productivity-center/PrivacyPolicy.html" }
       ]
     }
   }
@@ -52,6 +52,7 @@
 
   <!-- ===== Favicon ===== -->
   <link rel="icon" href="images/logo.png" type="image/png" />
+  <link rel="apple-touch-icon" href="images/logo.png" />
 
   <!-- ===== Stylesheet ===== -->
   <link rel="stylesheet" href="PrivacyPolicy.css" />
@@ -69,11 +70,11 @@
       </a>
       <nav aria-label="Main navigation">
         <ul class="nav-links">
-          <li><a href="index.html#features">Features</a></li>
-          <li><a href="index.html#how-it-works">How it works</a></li>
-          <li><a href="index.html#faq">FAQ</a></li>
+          <li class="nav-hide-mobile"><a href="index.html#features">Features</a></li>
+          <li class="nav-hide-mobile"><a href="index.html#how-it-works">How it works</a></li>
+          <li class="nav-hide-mobile"><a href="index.html#faq">FAQ</a></li>
           <li><a href="PrivacyPolicy.html" aria-current="page">Privacy Policy</a></li>
-          <li><a href="index.html#download" class="btn btn-primary">Download</a></li>
+          <li><a href="index.html#download" class="btn btn-primary nav-cta">Add to Chrome</a></li>
         </ul>
       </nav>
     </div>
@@ -88,9 +89,9 @@
         </nav>
         <h2>Privacy Policy</h2>
         <div class="page-meta">
-          <span class="pill">🗓 Last updated: November 8, 2026</span>
+          <span class="pill">🗓 Last updated: <time datetime="2026-11-17">November 20, 2026</time></span>
           <span class="pill">🔒 Local-first · No tracking</span>
-          <span class="pill">⚙️ Applies to version 2.2.3</span>
+          <span class="pill">⚙️ Applies to version 2.3.7</span>
         </div>
       </div>
     </div>
@@ -98,21 +99,21 @@
     <!-- ================= ARTICLE ================= -->
     <div class="wrap legal-layout">
 
-      <!-- Sticky table of contents -->
       <aside class="toc" aria-label="Table of contents">
         <h3>On this page</h3>
         <ol>
           <li><a href="#data-used">Data the extension uses</a></li>
           <li><a href="#storage">Where data is stored</a></li>
           <li><a href="#usage">How data is used</a></li>
+          <li><a href="#limited-use">Limited Use</a></li>
           <li><a href="#third-parties">Third-party sharing</a></li>
           <li><a href="#rights">Your rights</a></li>
           <li><a href="#security">Security</a></li>
           <li><a href="#changes">Changes to this policy</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ol>
       </aside>
 
-      <!-- Policy content -->
       <article id="policy" class="legal">
         <div class="callout">
           <strong>Key takeaway:</strong> Productivity Center processes and stores its data locally in browser
@@ -138,7 +139,7 @@
               blocked-site list.</li>
           </ul>
           <div class="callout do-not-collect">
-            <strong>We do NOT collect:</strong> your passwords, credit card numbers, personal messages,
+            <strong>The extension does NOT collect:</strong> passwords, credit card numbers, personal messages,
             search history, or any content from the websites you visit.
           </div>
         </section>
@@ -149,54 +150,71 @@
             The extension does not use a remote database or cloud sync service.</p>
           <ul>
             <li>Your data is stored only on <strong>your own computer</strong>.</li>
-            <li>We do not have access to your data.</li>
+            <li>The developer does not have access to your data.</li>
             <li>It is not transmitted to the developer or shared with third parties.</li>
           </ul>
         </section>
 
         <section id="usage" aria-labelledby="h-usage">
           <h3 id="h-usage"><span class="sec-num" aria-hidden="true">3</span> How do we use your data?</h3>
-          <p>We use this data solely to power the extension's features:</p>
+          <p>Data is used solely to power the extension's features:</p>
           <ul>
             <li><strong>Productivity stats:</strong> to show you a report of how much time you spent on specific sites.
             </li>
-            <li><strong>Website/keyword blocker and activity tracking:</strong> the extension requests access to all
-              website addresses during installation. It uses this access to record the active tab's hostname for local
-              activity summaries and to block only the sites or keywords you add while Focus Mode is enabled. It does
-              not read page contents.</li>
+            <li><strong>Website &amp; keyword blocker:</strong> The extension does not request access to any website at
+              install time. When you add a website to block, it asks for access to that specific site (and its
+              subdomains) so it can enforce your block list. For keyword blocking, the extension needs broader access
+              because keyword matching can apply to any URL. If you decline, the item is not added. The access is used
+              only to enforce the block list you configure while Focus Mode is on; the extension does not read page
+              contents.</li>
             <li><strong>Pomodoro timer:</strong> to track your work and break intervals.</li>
           </ul>
         </section>
 
+        <section id="limited-use" aria-labelledby="h-limited-use">
+          <h3 id="h-limited-use"><span class="sec-num" aria-hidden="true">4</span> Limited Use</h3>
+          <p>The use of information received by Productivity Center will adhere to the <a
+              href="https://developer.chrome.com/docs/webstore/program-policies/user-data-faq"
+              target="_blank" rel="noopener">Chrome Web Store User Data Policy</a>, including the Limited Use
+            requirements. Data accessed by the extension is used only to provide the user-facing features described
+            in this policy — Pomodoro timing, task management, website and keyword blocking, and local activity
+            summaries.</p>
+        </section>
+
         <section id="third-parties" aria-labelledby="h-third-parties">
-          <h3 id="h-third-parties"><span class="sec-num" aria-hidden="true">4</span> Third-party sharing</h3>
-          <p><strong>We do not share your data with anyone.</strong> No third-party advertisers, analytics
-            companies, or marketing firms have access to your data.</p>
+          <h3 id="h-third-parties"><span class="sec-num" aria-hidden="true">5</span> Third-party sharing</h3>
+          <p><strong>No data is shared with anyone.</strong> No third-party advertisers, analytics companies, or
+            marketing firms have access to your data.</p>
         </section>
 
         <section id="rights" aria-labelledby="h-rights">
-          <h3 id="h-rights"><span class="sec-num" aria-hidden="true">5</span> Your rights</h3>
+          <h3 id="h-rights"><span class="sec-num" aria-hidden="true">6</span> Your rights</h3>
           <p>You have full control over your data:</p>
           <ul>
             <li>You can view your stats and settings at any time within the extension.</li>
             <li>You can delete all locally stored extension data by clicking <strong>"Clear all data"</strong> in the
               Settings. This also resets the timer and removes active custom blocking rules.</li>
-            <li>Removing the extension normally removes its locally stored data according to the browser's
-              extension-storage behavior.</li>
+            <li>Removing the extension removes its locally stored data according to the browser's extension-storage
+              behavior.</li>
           </ul>
         </section>
 
         <section id="security" aria-labelledby="h-security">
-          <h3 id="h-security"><span class="sec-num" aria-hidden="true">6</span> Security</h3>
-          <p>Since your data is stored locally on your device, it is protected from external servers.
-            However, standard browser security applies. We recommend keeping your browser and operating
-            system up to date.</p>
+          <h3 id="h-security"><span class="sec-num" aria-hidden="true">7</span> Security</h3>
+          <p>Since your data is stored locally on your device, it is not exposed to external servers.
+            Standard browser security applies. Keeping your browser and operating system up to date is recommended.</p>
         </section>
 
         <section id="changes" aria-labelledby="h-changes">
-          <h3 id="h-changes"><span class="sec-num" aria-hidden="true">7</span> Changes to this policy</h3>
-          <p>If we update this privacy policy, we will update the "Last updated" date on this page.
+          <h3 id="h-changes"><span class="sec-num" aria-hidden="true">8</span> Changes to this policy</h3>
+          <p>If this privacy policy is updated, the "Last updated" date on this page will be updated.
             Continued use of the extension constitutes acceptance of the new policy.</p>
+        </section>
+
+        <section id="contact" aria-labelledby="h-contact">
+          <h3 id="h-contact"><span class="sec-num" aria-hidden="true">9</span> Contact</h3>
+          <p>If you have questions about this privacy policy or how the extension handles data, you can reach the
+            developer at <a href="mailto:LaisurRahman@proton.me">LaisurRahman@proton.me</a>.</p>
         </section>
       </article>
     </div>
@@ -210,12 +228,12 @@
         <a href="index.html">Home</a>
         <a href="index.html#faq">FAQ</a>
         <a href="index.html#download">Download</a>
-        <a href="#" aria-current="page">Contact</a>
+        <!-- TODO: replace mailto with your real contact email -->
+        <a href="mailto:LaisurRahman@proton.me">Contact</a>
       </nav>
     </div>
   </footer>
 
-  <!-- Minimal, defensive JS — page is fully functional without it -->
   <script>
     (function () {
       "use strict";

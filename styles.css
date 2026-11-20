@@ -64,6 +64,29 @@ section {
   padding: 72px 0;
 }
 
+/* Offset sticky header when jumping to anchored sections */
+section[id] {
+  scroll-margin-top: 80px;
+}
+
+/* Accessibility: skip link */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  background: var(--teal);
+  color: var(--paper);
+  padding: 10px 18px;
+  border-radius: 0 0 var(--radius) 0;
+  z-index: 200;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.skip-link:focus {
+  left: 0;
+}
+
 /* ================= Header / Nav ================= */
 .site-header {
   position: sticky;
@@ -79,6 +102,7 @@ section {
   align-items: center;
   justify-content: space-between;
   padding: 14px 20px;
+  gap: 16px;
 }
 
 .brand {
@@ -87,8 +111,14 @@ section {
   gap: 10px;
   text-decoration: none;
   color: var(--ink);
+  flex-shrink: 0;
 }
 
+.brand h1 {
+  font-family: Georgia, serif;
+  font-size: 20px;
+  line-height: 1.2;
+}
 
 .brand-mark-img {
   width: 34px;
@@ -100,6 +130,7 @@ section {
   display: flex;
   gap: 26px;
   list-style: none;
+  align-items: center;
 }
 
 .nav-links a {
@@ -110,6 +141,11 @@ section {
 
 .nav-links a:hover {
   color: var(--teal);
+}
+
+.nav-cta {
+  padding: 10px 20px;
+  font-size: 14px;
 }
 
 /* ================= Hero ================= */
@@ -216,7 +252,6 @@ section {
   font-size: 22px;
 }
 
-
 .card h3 {
   font-size: 19px;
   margin-bottom: 8px;
@@ -256,7 +291,6 @@ section {
 .step h3 {
   font-size: 18px;
   margin-bottom: 4px;
-  place-items: baseline;
   display: flex;
 }
 
@@ -265,7 +299,7 @@ section {
   font-size: 15px;
 }
 
-/* FAQ — native <details>, no JS needed */
+/* FAQ */
 .faq {
   max-width: 720px;
   margin: 0 auto;
@@ -289,6 +323,10 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.faq summary::-webkit-details-marker {
+  display: none;
 }
 
 .faq summary::after {
@@ -366,7 +404,7 @@ section {
   color: var(--coral);
 }
 
-/* Reveal animation (progressive enhancement — page works without JS) */
+/* Reveal animation */
 .reveal {
   opacity: 0;
   transform: translateY(16px);
@@ -392,12 +430,39 @@ section {
 
 /* ================= Mobile ================= */
 @media (max-width: 640px) {
+  .nav {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 8px;
+  }
+
+  .brand h1 {
+    font-size: 17px;
+  }
+
   .nav-links {
+    gap: 14px;
+  }
+
+  .nav-links a {
+    font-size: 13px;
+  }
+
+  .nav-hide-mobile {
     display: none;
+  }
+
+  .nav-cta {
+    padding: 8px 14px !important;
+    font-size: 12px !important;
   }
 
   .hero {
     padding: 64px 0 56px;
+  }
+
+  .hero h2 {
+    font-size: 30px !important;
   }
 
   .section-title {
@@ -406,5 +471,10 @@ section {
 
   section {
     padding: 52px 0;
+  }
+
+  .site-footer a {
+    margin-left: 0;
+    margin-right: 18px;
   }
 }
